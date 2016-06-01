@@ -10,16 +10,16 @@
   },
   "apps": {
     "push2cloud-auth-client": {
-      "path": "example/apps/mean-auth/client"
+      "path": "apps/mean-auth/client"
     },
     "push2cloud-auth-server": {
-      "path": "example/apps/mean-auth/server"
+      "path": "apps/mean-auth/server"
     },
     "push2cloud-auth-cqrs-host": {
-      "path": "example/apps/pap"
+      "path": "apps/pap"
     },
     "push2cloud-auth-cqrs-domain": {
-      "path": "example/apps/pap"
+      "path": "apps/pap"
     }
   }
 }

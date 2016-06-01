@@ -13,10 +13,10 @@
       "path": "apps/mean-auth"
     },
     "push2cloud-auth-cqrs-host": {
-      "path": "apps/pap/host"
+      "path": "apps/pap-host"
     },
     "push2cloud-auth-cqrs-domain": {
-      "path": "apps/pap/domain"
+      "path": "apps/pap-domain"
     }
   }
 }

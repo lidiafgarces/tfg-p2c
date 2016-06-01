@@ -1,5 +1,8 @@
 {
   "name": "mean-auth",
+  "author": "lidiafgarces",
+  "name": "pap",
+  "version": "0.0.0",
   "scripts": {
     "start": "node server/server.js"
   },

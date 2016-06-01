@@ -11,10 +11,10 @@
     "maxRetries": 60
   },
   "release": {
-    "name": "push2cloud-tfg",
+    "name": "tfg-p2c-test",
     "source": {
       "type": "git",
-      "url": "https://bitbucket.org/lidiafgarces/p2c-tfg",
+      "url": "https://github.com/lidiafgarces/tfg-p2c.git",
       "referenceValue": "master"
     },
     "manifest": "example/manifests/release.json"

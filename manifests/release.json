@@ -1,12 +1,12 @@
 {
-  "name": "push2cloud-example",
+  "name": "tfg-p2c-test",
   "description": "release manifest for push2cloud-tfg",
   "version": "1.0.0",
   "source": {
     "type": "git",
-    "url": "https://bitbucket.org/lidiafgarces/p2c-tfg",
+    "url": "https://github.com/lidiafgarces/tfg-p2c.git",
     "referenceValue": "master",
-    "postClone": "cd example/apps/host && npm install && npm run build"
+    "postClone": ""
   },
   "apps": {
     "push2cloud-auth-client": {

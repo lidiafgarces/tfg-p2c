@@ -1,0 +1,7 @@
+---
+applications:
+- name: mean-auth
+  buildpack: nodejs_buildpack
+  memory: 128M
+  host: mean-auth
+  command: node server/server.js

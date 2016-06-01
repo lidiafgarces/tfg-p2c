@@ -1,0 +1,10 @@
+---
+applications:
+- name: cqrs-domain
+  buildpack: nodejs_buildpack
+  memory: 128M
+  path: ../
+  no-route: true
+  command: node domain/server.js
+  services: 
+    - redisdb

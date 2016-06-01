@@ -1,0 +1,8 @@
+---
+applications:
+- name: cqrs-test
+  buildpack: nodejs_buildpack
+  memory: 128M
+  path: ../
+  host: cqrs-host-99
+  command: node host/server.js

@@ -1,0 +1,36 @@
+<div>
+    <p><h1>Management of Users</h1></p>
+<div>
+<br>
+<div>
+    <p>
+        <a ng-click='newUser()' class="btn btn-default">New User</a>
+    </p>
+    <br>
+    <p>
+        <table style="width:100%">
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Center</th>
+                <th>Delegation</th>
+                <th>Role</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="user in users">
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.center}}</td>
+                <td>{{user.delegation}}</td>
+                <td>{{user.role}}</td>
+                <td>
+                    <a ng-click='editUser(user.username)' class="btn btn-default">Edit</a>
+                    <a ng-click='resetPassword(user.username)' class="btn btn-default">New password</a>
+                    <a ng-click='deleteUser(user.username)' class="btn btn-default">Delete</a>
+                </td>
+            </tr>
+        </table>
+    </p>
+    <br>
+    <a ng-click='logout()' class="btn btn-default">Logout</a>
+</div>

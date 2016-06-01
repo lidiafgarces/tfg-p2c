@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .page-header
+        h1 Añadir práctica
+
+    #index-view
+        form
+            p Reference: 
+                input#newItemRef(type="text",name="ref")
+            p Text: 
+                 input#newItemText(type="text",name="text")
+            button#addItem add

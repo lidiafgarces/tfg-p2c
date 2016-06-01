@@ -1,0 +1,25 @@
+{
+  "title": "createItem",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "command": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        }
+        "ref": {
+          "type": "string"
+        }
+      },
+      "required": ["text", "ref"]
+    }
+  },
+  "required": ["id", "command", "payload"]
+}

@@ -17,7 +17,7 @@
       "url": "https://github.com/lidiafgarces/tfg-p2c.git",
       "referenceValue": "master"
     },
-    "manifest": "example/manifests/release.json"
+    "manifest": "manifests/release.json"
   },
   "secureAppConnections": true,
   "domains": {

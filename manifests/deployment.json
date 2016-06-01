@@ -47,17 +47,10 @@
     }
   },
   "apps": {
-    "push2cloud-auth-client": {
+    "push2cloud-auth": {
       "routes": {
         "public": [
-          "push2cloud-auth-client-lidia"
-        ]
-      }
-    },
-    "push2cloud-auth-server": {
-      "routes": {
-        "internal": [
-          "push2cloud-auth-server-lidia"
+          "push2cloud-auth-lidia"
         ]
       }
     },

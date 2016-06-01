@@ -9,11 +9,8 @@
     "postClone": ""
   },
   "apps": {
-    "push2cloud-auth-client": {
-      "path": "apps/mean-auth/client"
-    },
-    "push2cloud-auth-server": {
-      "path": "apps/mean-auth/server"
+    "push2cloud-auth": {
+      "path": "apps/mean-auth"
     },
     "push2cloud-auth-cqrs-host": {
       "path": "apps/pap"

@@ -1,0 +1,79 @@
+{
+  "name": "push2cloud-example",
+  "version": "1.0.0",
+  "description": "deployment manifest for push2cloud example",
+  "target": {
+    "type": "cloudfoundry",
+    "api": "https://api.lyra-836.appcloud.swisscom.com",
+    "space": "Team 9",
+    "org": "ZHAW@Roland/Mai2016",
+    "delay": 500,
+    "maxRetries": 60
+  },
+  "release": {
+    "name": "push2cloud-tfg",
+    "source": {
+      "type": "git",
+      "url": "https://bitbucket.org/lidiafgarces/p2c-tfg",
+      "referenceValue": "master"
+    },
+    "manifest": "example/manifests/release.json"
+  },
+  "secureAppConnections": true,
+  "domains": {
+    "public": "scapp.io",
+    "internal": "scapp.io"
+  },
+  "serviceMapping": {
+    "redisdb": {
+      "type": "redis",
+      "plan": "small"
+    },
+    "mogoeventstore": {
+      "type": "mongodb",
+      "plan": "small"
+    }
+  },
+  "applicationDefaults": {
+    "memory": "512M",
+    "disk": "512M",
+    "instances": 1,
+    "startTimeout": 600,
+    "stageTimeout": 600,
+    "gracePeriod": 20,
+    "buildpack": "https://github.com/cloudfoundry/nodejs-buildpack.git",
+    "env": {
+      "SYSTEM_VERSION": "${SYSTEM_VERSION}"
+    }
+  },
+  "apps": {
+    "push2cloud-auth-client": {
+      "routes": {
+        "public": [
+          "push2cloud-auth-client-lidia"
+        ]
+      }
+    },
+    "push2cloud-auth-server": {
+      "routes": {
+        "internal": [
+          "push2cloud-auth-server-lidia"
+        ]
+      }
+    },
+    "push2cloud-auth-cqrs-host": {
+      "routes": {
+        "public": [
+          "push2cloud-auth-cqrs-host-lidia"
+        ]
+      }
+    },
+    "push2cloud-auth-cqrs-domain": {
+      "routes": {
+        "internal": [
+          "push2cloud-auth-cqrs-domain-lidia"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "push2cloud-example",
+  "description": "release manifest for push2cloud-tfg",
+  "version": "1.0.0",
+  "source": {
+    "type": "git",
+    "url": "https://bitbucket.org/lidiafgarces/p2c-tfg",
+    "referenceValue": "master",
+    "postClone": "cd example/apps/host && npm install && npm run build"
+  },
+  "apps": {
+    "push2cloud-auth-client": {
+      "path": "example/apps/mean-auth/client"
+    },
+    "push2cloud-auth-server": {
+      "path": "example/apps/mean-auth/server"
+    },
+    "push2cloud-auth-cqrs-host": {
+      "path": "example/apps/pap"
+    },
+    "push2cloud-auth-cqrs-domain": {
+      "path": "example/apps/pap"
+    }
+  }
+}

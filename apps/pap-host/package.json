@@ -5,7 +5,8 @@
     "private": true,
     "main": "server.js",
     "engines": {
-        "node": "4.4.x"
+        "node": "4.4.x",
+        "npm": "3.x"
     },
     "scripts": {
         "start": "node host/server.js"

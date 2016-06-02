@@ -1,0 +1,19 @@
+{
+  "name": "push2cloud-tfg",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run startAuth\" \"npm run startPapHost\" \"npm run startPapDomain\"",
+    "startAuth": "cd mean-auth && npm start",
+    "startPapHost": "cd pap-host && npm start",
+    "startPapDomain": "cd pap-domain && npm start"
+  },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^2.0.0"
+  }
+}

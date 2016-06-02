@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "start": "node server/server.js",
-    "npm": "3.x"
   },
   "deployment": {
     "buildpack": "https://github.com/cloudfoundry/nodejs-buildpack"

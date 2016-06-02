@@ -21,17 +21,17 @@
   },
   "secureAppConnections": true,
   "domains": {
-    "public": "scapp.io",
-    "internal": "scapp.io"
+    "public": "cfapps.io",
+    "internal": "cfapps.io"
   },
    "serviceMapping": {
     "redisdb" : {
-      "type": "redis",
-      "plan": "small"
+      "type": "rediscloud",
+      "plan": "30mb"
     },
     "mogoeventstore" : {
-      "type": "mongodb",
-      "plan": "small"
+      "type": "mlab",
+      "plan": "sandbox"
     }
   },
   "applicationDefaults": {

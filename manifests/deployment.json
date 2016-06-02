@@ -54,17 +54,17 @@
         ]
       }
     },
-    "push2cloud-auth-cqrs-host": {
+    "push2cloud-cqrs-host": {
       "routes": {
         "public": [
-          "push2cloud-auth-cqrs-host-lidia"
+          "push2cloud-cqrs-host-lidia"
         ]
       }
     },
-    "push2cloud-auth-cqrs-domain": {
+    "push2cloud-cqrs-domain": {
       "routes": {
         "internal": [
-          "push2cloud-auth-cqrs-domain-lidia"
+          "push2cloud-cqrs-domain-lidia"
         ]
       }
     }

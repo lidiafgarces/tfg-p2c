@@ -6,6 +6,11 @@
   "scripts": {
     "start": "node server/server.js"
   },
+  "deployment": {
+    "serviceBinding": [
+      "todo-db"
+    ]
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.0",

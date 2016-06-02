@@ -3,10 +3,11 @@
   "author": "lidiafgarces",
   "version": "0.0.0",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server/server.js"
   },
   "deployment": {
     "buildpack": "https://github.com/cloudfoundry/nodejs-buildpack"
+
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",

@@ -4,9 +4,9 @@
   "description": "deployment manifest for push2cloud example",
   "target": {
     "type": "cloudfoundry",
-    "api": "https://api.lyra-836.appcloud.swisscom.com",
-    "space": "Team 9",
-    "org": "ZHAW@Roland/Mai2016",
+    "api": "https://api.run.pivotal.io",
+    "space": "mach",
+    "org": "lidia",
     "delay": 500,
     "maxRetries": 60
   },
@@ -50,21 +50,21 @@
     "push2cloud-auth": {
       "routes": {
         "public": [
-          "push2cloud-auth-lidia"
+          "push2cloud-auth"
         ]
       }
     },
     "push2cloud-cqrs-host": {
       "routes": {
         "public": [
-          "push2cloud-cqrs-host-lidia"
+          "push2cloud-cqrs-host"
         ]
       }
     },
     "push2cloud-cqrs-domain": {
       "routes": {
         "internal": [
-          "push2cloud-cqrs-domain-lidia"
+          "push2cloud-cqrs-domain"
         ]
       }
     }

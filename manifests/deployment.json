@@ -5,8 +5,8 @@
   "target": {
     "type": "cloudfoundry",
     "api": "https://api.run.pivotal.io",
-    "space": "mach",
-    "org": "lidia",
+    "space": "lidia",
+    "org": "mach",
     "delay": 500,
     "maxRetries": 60
   },

@@ -63,9 +63,6 @@
     },
     "push2cloud-cqrs-domain": {
       "routes": {
-        "internal": [
-          "push2cloud-cqrs-domain"
-        ]
       }
     }
   }

@@ -41,8 +41,8 @@ var options = {
         port: 19078, // optional
         dbName: 'CloudFoundry_5b904c6m_iisokrk6', // optional
         //authSource: 'db',       // optional
-        username: 'CloudFoundry_5b904c6m_iisokrk6_abbq5hk3', // optional
-        password: '418quvxrbkJDbf2T_EEhrtj31xWohqcb' // optional
+        username: 'CloudFoundry_5b904c6m_iisokrk6_is9c9dr4', // optional
+        password: 'lQ-iqRRyK-oMupYOtfIcgwagpOphPNT' // optional
 
     },
     revisionGuardStore: {
